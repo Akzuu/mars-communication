@@ -24,6 +24,7 @@ Table of Contents
    3. Data Integrity
    4. Security Considerations .........................................4
    5. Summary .........................................................5
+   6. Sources .........................................................6
 
 
 
@@ -38,6 +39,30 @@ Table of Contents
 
 1.  Introduction
 
+   As colonization of mars gets closer, there are still some problems 
+   that must be solved before a such plan can happen.  Currently NASA
+   has a long-term goal of sending humans to Mars by 2030s [1], so there
+   is not much time to loose.
+
+   One of the problems is how to use TCP/IP protocol as a means of
+   communications.  The problem is that if a packet gets lost into the
+   space, the time cost of resending the packet from Mars is way too
+   long, making the communications with really difficult between the
+   planets.
+
+   Our solution to this problem is setting up a relay link system
+   between the planets, using satellites strategically positioned to the
+   lagrangian points and to the orbit of the Sun, Earth and Mars.  The
+   relay links will have some memory, which will be used to store TCP/IP
+   packets.  This way, if a packet goes missing on its way to Earth
+   or Mars, it can be resent from the relay satellite, instead of
+   sending it from its origin planet, which will cause huge latency.
+
+   The above solution will be discussed in more detail in the second
+   chapter.  In the third chapter, we will discuss about data integrity
+   and in the fourth chapter we will briefly discuss security problems.
+   Fifth chapter will have quick summary about this paper.
+
 
 
                               Proposal                          [Page 3]
@@ -50,7 +75,24 @@ Table of Contents
 
                              RFC Style Guide                    May 2020
 
-3. Security Considerations                             
+4. Security Considerations                             
+
+                              Proposal                          [Page 4]
+
+                             RFC Style Guide                    May 2020
+
+5. Summary                         
+
+                              Proposal                          [Page 4]
+
+                             RFC Style Guide                    May 2020
+
+6. Sources
+
+   [1]   Mars 2020 Mission Contributions to NASA's Mars Exploration 
+         Program Science Goal,
+         https://mars.nasa.gov/mars2020/mission/science/goals/
+         Read: 11.05.2020
 
                               Proposal                          [Page 4]
 
