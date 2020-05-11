@@ -98,6 +98,13 @@ Table of Contents
    next to them.  The link relay satellities must have enough memory and
    logic so that they are able to create these sessions between them.
 
+   The motivation behind this satellite relay solution is to split the
+   total travelling distance to smaller chunks.  The relays should use
+   some kind of algorithm to determine the best link relays for the
+   whole path at the current situation.  If the planets are close to 
+   each other, there should be less links than for example when the 
+   planets are furthest away from each other.
+
    Now if a packet goes missing, noticing it will be much quicker,
    because of the TCP sessions between the links.  The links will store
    all packets that they receive for transmitting, and if a packet goes
