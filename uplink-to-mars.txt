@@ -44,13 +44,40 @@ Table of Contents
 
                              RFC Style Guide                    May 2020
 
-2. Solution To The Latency Problem
+2. The Latency Problem
                              
+                              Proposal                          [Page 4]
+   As both Earth and Mars occupy their own respective orbits of the Sun,
+   the distance between the two planets is by no means constant. The
+   theoretical minimum of the interplanetary distance is as little as 56
+   million kilometers, with the theoretical maximum being as large as
+   401 million km - over 7.3 times the minimum distance.  This means,
+   that when using RF as the physical layer in Earth-Mars
+   communications, the transmit delay varies from roughly 3 minutes to
+   22 minutes.  On average, the interplanetary distance is 225 million
+   km - causing an average delay of 13 minutes.
+https://www.space.com/16875-how-far-away-is-mars.html
+
+   While obviously an inconvenience in itself, the transmission delay
+   is not a problem that can be solved with our current understanding of
+   physics.  Instead the problem that this document proposes a
+   mitigation to is the overall latency realized as packets are lost and
+   retransmitted - the retransmit of a single package at the worst-case
+   scenario (that is the theoretical maximum interplanetary distance)
+   would cause an overall latency of some 45 minutes.
+
+   
+
+
+                             RFC Style Guide                    May 2020
+
+3. Data Integrity                             
+
                               Proposal                          [Page 4]
 
                              RFC Style Guide                    May 2020
 
-3. Security Considerations                             
+4. Security Considerations                             
 
                               Proposal                          [Page 4]
 
