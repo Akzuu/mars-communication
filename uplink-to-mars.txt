@@ -19,7 +19,7 @@ Table of Contents
 
    1. Introduction ....................................................2
    2. The Latency Problem .............................................3
-         2.1.  Satellite relays
+         2.1.  Satellite Relays .......................................3
          2.2.  Satellite Constellation ................................3
    3. Data Integrity vs. Bandwidth ....................................3
    4. Security Considerations .........................................4
@@ -46,9 +46,9 @@ Table of Contents
 
    One of the problems is how to use TCP/IP protocol as a means of
    communications.  The problem is that if a packet gets lost into the
-   space, the time cost of resending the packet from Mars is way too
-   long, making the communications with really difficult between the
-   planets.
+   space, the time cost of resending the packet from Mars (or Earth) is 
+   way too long, making the communications with really difficult between
+   the planets.
 
    Our solution to this problem is setting up a relay link system
    between the planets, using satellites strategically positioned to the
@@ -70,8 +70,7 @@ Table of Contents
                              RFC Style Guide                    May 2020
 
 2. The Latency Problem
-                             
-                              Proposal                          [Page 4]
+
    As both Earth and Mars occupy their own respective orbits of the Sun,
    the distance between the two planets is by no means constant. The
    theoretical minimum of the interplanetary distance is as little as 56
@@ -80,7 +79,7 @@ Table of Contents
    that when using a lightspeed physical layer in Earth-Mars
    communications, the transmission delay varies from roughly 3 minutes
    to 22 minutes.  On average, the interplanetary distance is 225
-   million km - causing an average delay of 13 minutes.
+   million km - causing an average delay of 13 minutes. [2]
 
    While obviously an inconvenience in itself, the transmission delay
    is not a problem that can be solved with our current understanding of
@@ -90,7 +89,38 @@ Table of Contents
    worst-case scenario (that is the theoretical maximum inter-planetary
    distance) would cause an overall latency of some 45 minutes.
 
-   
+2.1 Satellite Relays
+
+   Our proposed solution to the latency issue is setting up a relay link
+   system to the space, which would would relay the packets between the 
+   planets.  When a connection from Earth to Mars (or vice versa) is 
+   established, every link will open their own TCP session to the link
+   next to them.  The link relay satellities must have enough memory and
+   logic so that they are able to create these sessions between them.
+
+   Now if a packet goes missing, noticing it will be much quicker,
+   because of the TCP sessions between the links.  The links will store
+   all packets that they receive for transmitting, and if a packet goes
+   missing they will simply retransmit it until they receive ACK from
+   the next relay.  At this point, the packet may be removed from the
+   links memory.
+
+
+2.2 Satellite Constellation
+
+   We propose that the satellite link relays will be placed to the
+   Langrarian points of both Earth and Mars.  In addition, there should
+   be some edge relays placed in the orbits of the said planets.  By
+   placing the satellite link relays to Lagrangian points, we can make 
+   sure that the Sun will never be able to block the communications 
+   between the planets completly.
+
+   Further research to optimize the satellite locations should be made.
+
+
+
+                             
+                              Proposal                          [Page 4]
 
 
                              RFC Style Guide                    May 2020
