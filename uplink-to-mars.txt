@@ -17,11 +17,14 @@ Abstract
 
 Table of Contents
 
-   1. Introduction ....................................................3
-   2.  .........................................4
-   3.  ...........................................5
-      3.1.  ...................................................5
-      3.2.  ................................................5
+   1. Introduction ....................................................2
+   2. The Latency Problem .............................................3
+         2.1.  Satellite relays
+         2.2.  Satellite Constellation ................................3
+   3. Data Integrity
+   4. Security Considerations .........................................4
+   5. Summary .........................................................5
+
 
 
 
@@ -37,9 +40,18 @@ Table of Contents
 
 
 
-
-
                               Proposal                          [Page 3]
 
                              RFC Style Guide                    May 2020
 
+2. Solution To The Latency Problem
+                             
+                              Proposal                          [Page 4]
+
+                             RFC Style Guide                    May 2020
+
+3. Security Considerations                             
+
+                              Proposal                          [Page 4]
+
+                             RFC Style Guide                    May 2020
