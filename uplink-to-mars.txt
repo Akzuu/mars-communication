@@ -39,24 +39,25 @@ Table of Contents
 
 1.  Introduction
 
-   As colonization of mars gets closer, there are still some problems 
+   As colonization of Mars gets closer, there are still some problems 
    that must be solved before a such plan can happen.  Currently NASA
    has a long-term goal of sending humans to Mars by 2030s [1], so there
-   is not much time to loose.
+   is not much time to lose.
 
-   One of the problems is how to use TCP/IP protocol as a means of
-   communications.  The problem is that if a packet gets lost into the
-   space, the time cost of resending the packet from Mars (or Earth) is 
-   way too long, making the communications with really difficult between
-   the planets.
+   One of the problems is how to use wireless data transimission as a
+   means of communications.  The problem is that if a packet gets lost
+   into the space, the time cost of resending the packet from Mars
+   (or Earth) is way too long, making the communications between the
+   planets challenging.
 
    Our solution to this problem is setting up a relay link system
-   between the planets, using satellites strategically positioned to the
-   lagrangian points and to the orbit of the Sun, Earth and Mars.  The
-   relay links will have some memory, which will be used to store TCP/IP
+   between the planets, using satellites strategically positioned to
+   Lagrangian points and to the orbit of the Sun, Earth and Mars.  The
+   relay links will have some memory, which will be used to cache TCP/IP
    packets.  This way, if a packet goes missing on its way to Earth
    or Mars, it can be resent from the relay satellite, instead of
-   sending it from its origin planet, which will cause huge latency.
+   sending it from its origin planet, which would cause massive overall
+   latency.
 
    The above solution will be discussed in more detail in the second
    chapter.  In the third chapter, we will discuss about data integrity
@@ -78,8 +79,10 @@ Table of Contents
    401 million km - over 7.3 times the minimum distance.  This means,
    that when using a lightspeed physical layer in Earth-Mars
    communications, the transmission delay varies from roughly 3 minutes
-   to 22 minutes.  On average, the interplanetary distance is 225
-   million km - causing an average delay of 13 minutes. [2]
+   to 22 minutes (of course, this would require communications through
+   the Sun, so the actual maximum delay is even larger).  On average,
+   the interplanetary distance is 225 million km - causing an average
+   theoretical delay of 13 minutes. [2]
 
    While obviously an inconvenience in itself, the transmission delay
    is not a problem that can be solved with our current understanding of
@@ -87,7 +90,8 @@ Table of Contents
    mitigation to is the overall latency realized as packets are lost and
    retransmitted - the retransmission of a single package at the
    worst-case scenario (that is the theoretical maximum inter-planetary
-   distance) would cause an overall latency of some 45 minutes.
+   distance) would cause an overall theoretical latency of some 45
+   minutes (again, the real-world value would be even larger).
 
 2.1 Satellite Relays
 
@@ -99,18 +103,21 @@ Table of Contents
    logic so that they are able to create these sessions between them.
 
    The motivation behind this satellite relay solution is to split the
-   total travelling distance to smaller chunks.  The relays should use
-   some kind of algorithm to determine the best link relays for the
-   whole path at the current situation.  If the planets are close to 
-   each other, there should be less links than for example when the 
-   planets are furthest away from each other.
+   total travelling distance to smaller chunks.  In case of packet loss,
+   the lost packet would have to be transmitted only from the previous
+   relay satellite, instead of the planet of origin - reducing the
+   ultimate latency time.  The relays should use some kind of algorithm
+   to determine the best link relays for the whole path at the current
+   situation.  If the planets are close to  each other, there should be
+   fewer links than for example when the  planets are furthest away from
+   each other.
 
    Now if a packet goes missing, noticing it will be much quicker,
-   because of the TCP sessions between the links.  The links will store
+   because of the TCP sessions between the links.  The links will cache
    all packets that they receive for transmitting, and if a packet goes
    missing they will simply retransmit it until they receive ACK from
    the next relay.  At this point, the packet may be removed from the
-   links memory.
+   link's memory.
 
 
 2.2 Satellite Constellation
@@ -155,14 +162,17 @@ Table of Contents
    terrestrial wireless communications, different channel codings should
    be developed to provide varying goodput values, as the channel will
    without doubt vary over time, as the interplanetary distance changes,
-   along with the strength of solar noise.
+   along with the strength of solar noise.  As the communication will be
+   split into shorter distances via the use of relay satellites, the
+   channel coding can also be altered for example for every link, be
+   it either planet-satellite or satellite-satellite.
 
                               Proposal                          [Page 4]
 
 4. Security Considerations                             
 
                               Proposal                          [Page 4]
-
+   
                              RFC Style Guide                    May 2020
 
 5. Summary                         
