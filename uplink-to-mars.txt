@@ -142,13 +142,20 @@ Table of Contents
    capacity for forward error correction purposes.
 
    The main difference between relevant resources on Earth and
-   interplanetary communication is that massive latency is not much of
+   interplanetary communication is that massive latency is usually
    an issue on Earth, while due to regulatory reasons, bandwidth is much
    more of a scarce resource. The opposite could be said about
    planet-to-planet communications; while there is a lot of bandwidth
-   available (for now), the latency, and more specifically the
-   importance of not having to retransmit packages, is a huge factor
-   to take into account.
+   available (for now), the latency, more specifically the
+   multiplied latency in case of packet loss, is a major factor to
+   consider.
+
+   Taking these resource factors into account, development should
+   prioritize data intergrity over transfer speed.  However, similar to
+   terrestrial wireless communications, different channel codings should
+   be developed to provide varying goodput values, as the channel will
+   without doubt vary over time, as the interplanetary distance changes,
+   along with the strength of solar noise.
 
                               Proposal                          [Page 4]
 
