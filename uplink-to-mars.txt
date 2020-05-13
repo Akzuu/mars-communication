@@ -14,19 +14,18 @@ Abstract
 
                               Proposal                          [Page 1]
 
-                             RFC Style Guide                    May 2020
+      Relay system for Earth to Mars Digital Communication      May 2020
 
 
 Table of Contents
 
-   1. Introduction ....................................................2
-   2. The Latency Problem .............................................3
-         2.1.  Satellite Relays .......................................3
-         2.2.  Satellite Constellation ................................3
-   3. Data Integrity vs. Transfer Speed ...............................3
-   4. Security Considerations .........................................4
-   5. Summary .........................................................5
-   6. Sources .........................................................6
+   1. Introduction ....................................................3
+   2. The Latency Problem .............................................4
+         2.1.  Satellite Relays .......................................4
+         2.2.  Satellite Constellation ................................4
+   3. Data Integrity vs. Transfer Speed ...............................5
+   4. Summary .........................................................6
+   5. Sources .........................................................7
 
 
 
@@ -36,7 +35,7 @@ Table of Contents
 
                               Proposal                          [Page 2]
 
-                             RFC Style Guide                    May 2020
+      Relay system for Earth to Mars Digital Communication      May 2020
 
 
 1.  Introduction
@@ -62,15 +61,14 @@ Table of Contents
    latency.
 
    The above solution will be discussed in more detail in the second
-   chapter.  In the third chapter, we will discuss about data integrity
-   and in the fourth chapter we will briefly discuss security problems.
-   Fifth chapter will have quick summary about this paper.
+   chapter. In the third chapter, we will discuss about data integrity
+   and the fourth chapter will have quick summary about this paper.
 
 
 
                               Proposal                          [Page 3]
 
-                             RFC Style Guide                    May 2020
+      Relay system for Earth to Mars Digital Communication      May 2020
 
 2. The Latency Problem
 
@@ -144,11 +142,10 @@ Table of Contents
                               Proposal                          [Page 4]
 
 
-                             RFC Style Guide                    May 2020
+      Relay system for Earth to Mars Digital Communication      May 2020
 
 3. Data Integrity vs. Transfer Speed                            
 
-                             RFC Style Guide                    May 2020
    This document will not go into the actual technological components of
    interplanetary receiver/transmitter implementations, however it is
    important to know the main points to consider when making
@@ -173,11 +170,12 @@ Table of Contents
    channel coding can also be altered for example at every link, be it
    either planet-satellite or satellite-satellite.
 
-                              Proposal                          [Page 4]
+                              Proposal                          [Page 5]
+
+      Relay system for Earth to Mars Digital Communication      May 2020
 
 4. Summary                         
 
-                              Proposal                          [Page 4]
    This proposal for an Earth-Mars communications system uses an array
    of satellites which will simultaneously act as relay points and
    memory caches.  The caching decreases the total latency experienced
@@ -189,9 +187,12 @@ Table of Contents
    development work should prioritize data integrity over transfer
    speed, as avoiding any need of resending packets is a key part of the
    need for this kind of system.
-                             RFC Style Guide                    May 2020
 
-6. Sources
+                              Proposal                          [Page 6]
+      
+      Relay system for Earth to Mars Digital Communication      May 2020
+
+5. Sources
 
    [1]   Mars 2020 Mission Contributions to NASA's Mars Exploration 
          Program Science Goal,
@@ -202,6 +203,7 @@ Table of Contents
          space.com,
          https://www.space.com/16875-how-far-away-is-mars.html
          Read: 11.05.2020
-                              Proposal                          [Page 4]
+
+                              Proposal                          [Page 7]
 
-                             RFC Style Guide                    May 2020
+      Relay system for Earth to Mars Digital Communication      May 2020
