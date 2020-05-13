@@ -3,8 +3,8 @@ Abstract
 
    This document describes a way to create a communication link to Mars
    using TCP/IP protocol.  Aim of this proposed solution is to lower the
-   latency in worst case scenarios, such as when the Sun is blocking
-   communications or when a packet gets lost and it has to be
+   latency in the worst case scenarios, such as when the Sun is blocking
+   communications or when a packet gets lost and has to be
    retransmitted.  Our solution to this problem is setting up a
    satellite link relay system, which will save the packets it receives
    until it receives ACK signal from the next satellite. If a packet
