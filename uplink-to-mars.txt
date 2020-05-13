@@ -21,7 +21,7 @@ Table of Contents
    2. The Latency Problem .............................................3
          2.1.  Satellite Relays .......................................3
          2.2.  Satellite Constellation ................................3
-   3. Data Integrity vs. Bandwidth ....................................3
+   3. Data Integrity vs. Transfer Speed ...............................3
    4. Security Considerations .........................................4
    5. Summary .........................................................5
    6. Sources .........................................................6
@@ -89,7 +89,7 @@ Table of Contents
    physics.  Instead the problem that this document proposes a
    mitigation to is the overall latency realized as packets are lost and
    retransmitted - the retransmission of a single package at the
-   worst-case scenario (that is the theoretical maximum inter-planetary
+   worst-case scenario (that is the theoretical maximum interplanetary
    distance) would cause an overall theoretical latency of some 45
    minutes (again, the real-world value would be even larger).
 
@@ -127,7 +127,7 @@ Table of Contents
    be some edge relays placed in the orbits of the said planets.  By
    placing the satellite link relays to Lagrangian points, we can make 
    sure that the Sun will never be able to block the communications 
-   between the planets completly.
+   between the planets completely.
 
    Further research to optimize the satellite locations should be made.
 
@@ -139,7 +139,7 @@ Table of Contents
 
                              RFC Style Guide                    May 2020
 
-3. Data Integrity vs. Bandwidth                             
+3. Data Integrity vs. Transfer Speed                            
 
                              RFC Style Guide                    May 2020
    This document will not go into the actual technological components of
@@ -153,9 +153,8 @@ Table of Contents
    an issue on Earth, while due to regulatory reasons, bandwidth is much
    more of a scarce resource. The opposite could be said about
    planet-to-planet communications; while there is a lot of bandwidth
-   available (for now), the latency, more specifically the
-   multiplied latency in case of packet loss, is a major factor to
-   consider.
+   available (for now), the latency, more specifically the multiplied
+   latency in case of packet loss, is a major factor to consider.
 
    Taking these resource factors into account, development should
    prioritize data intergrity over transfer speed.  However, similar to
@@ -164,21 +163,25 @@ Table of Contents
    without doubt vary over time, as the interplanetary distance changes,
    along with the strength of solar noise.  As the communication will be
    split into shorter distances via the use of relay satellites, the
-   channel coding can also be altered for example for every link, be
-   it either planet-satellite or satellite-satellite.
+   channel coding can also be altered for example at every link, be it
+   either planet-satellite or satellite-satellite.
 
                               Proposal                          [Page 4]
 
-4. Security Considerations                             
+4. Summary                         
 
                               Proposal                          [Page 4]
-   
-                             RFC Style Guide                    May 2020
-
-5. Summary                         
-
-                              Proposal                          [Page 4]
-
+   This proposal for an Earth-Mars communications system uses an array
+   of satellites which will simultaneously act as relay points and
+   memory caches.  The caching decreases the total latency experienced
+   in actual planet-to-planet communications, as the need to retransmit
+   data from the planet of origin is eliminated, should it become
+   corrupted between two relay points.  The satellites are to be
+   positioned so that interplanetary communications are possible even
+   when the two planets are at the opposite sides of the sun.  Further
+   development work should prioritize data integrity over transfer
+   speed, as avoiding any need of resending packets is a key part of the
+   need for this kind of system.
                              RFC Style Guide                    May 2020
 
 6. Sources
