@@ -1,13 +1,15 @@
 
 Abstract
 
-   This document describes the fundamental and unique style conventions
-   and editorial policies currently in use for the RFC Series.  It
-   captures the RFC Editor's basic requirements and offers guidance
-   regarding the style and structure of an RFC.  Additional guidance is
-   captured on a website that reflects the experimental nature of that
-   guidance and prepares it for future inclusion in the RFC Style Guide.
-   This document obsoletes RFC 2223, "Instructions to RFC Authors".
+   This document describes a way to create a communication link to Mars
+   using TCP/IP protocol.  Aim of this proposed solution is to lower the
+   latency in worst case scenarios, such as when the Sun is blocking
+   communications or when a packet gets lost and it has to be
+   retransmitted.  Our solution to this problem is setting up a
+   satellite link relay system, which will save the packets it receives
+   until it receives ACK signal from the next satellite. If a packet
+   goes missing, it will be retransmit from the satellite rather than
+   from its origin.
 
 
                               Proposal                          [Page 1]
@@ -118,6 +120,11 @@ Table of Contents
    missing they will simply retransmit it until they receive ACK from
    the next relay.  At this point, the packet may be removed from the
    link's memory.
+
+   Getting this communication link up and runnig might be slower,
+   because it requires individual connections to bet set up for the link
+   satellites.  This problem can be overcome, if the links between the
+   satellities always stay up.
 
 
 2.2 Satellite Constellation
