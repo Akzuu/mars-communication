@@ -24,9 +24,8 @@ Table of Contents
          2.1.  Satellite Relays .......................................4
          2.2.  Satellite Constellation ................................4
    3. Data Integrity vs. Transfer Speed ...............................5
-   4. Other reserach about the subject ................................6
-   5. Summary .........................................................7
-   6. Sources .........................................................8
+   4. Summary .........................................................6
+   5. Sources .........................................................7
 
 
 
@@ -171,20 +170,11 @@ Table of Contents
    channel coding can also be altered for example at every link, be it
    either planet-satellite or satellite-satellite.
 
-
                               Proposal                          [Page 5]
 
       Relay system for Earth to Mars Digital Communication      May 2020
 
-4. Other research about the subject                         
-
-
-
-                              Proposal                          [Page 6]
-
-      Relay system for Earth to Mars Digital Communication      May 2020
-
-5. Summary                         
+4. Summary                         
 
    This proposal for an Earth-Mars communications system uses an array
    of satellites which will simultaneously act as relay points and
@@ -198,7 +188,7 @@ Table of Contents
    speed, as avoiding any need of resending packets is a key part of the
    need for this kind of system.
 
-                              Proposal                          [Page 7]
+                              Proposal                          [Page 6]
       
       Relay system for Earth to Mars Digital Communication      May 2020
 
@@ -214,6 +204,6 @@ Table of Contents
          https://www.space.com/16875-how-far-away-is-mars.html
          Read: 11.05.2020
 
-                              Proposal                          [Page 8]
+                              Proposal                          [Page 7]
 
       Relay system for Earth to Mars Digital Communication      May 2020
