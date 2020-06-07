@@ -46,7 +46,7 @@ Table of Contents
    has a long-term goal of sending humans to Mars by 2030s [1], so there
    is not much time to lose.
 
-   One of the problems is how to use wireless data transimission as a
+   One of the problems is how to use wireless data transmission as a
    means of communications.  The problem is that if a packet gets lost
    into the space, the time cost of resending the packet from Mars
    (or Earth) is way too long, making the communications between the
@@ -97,10 +97,10 @@ Table of Contents
 2.1 Satellite Relays
 
    Our proposed solution to the latency issue is setting up a relay link
-   system to the space, which would would relay the packets between the 
+   system to the space, which would relay the packets between the 
    planets.  When a connection from Earth to Mars (or vice versa) is 
    established, every link will open their own TCP session to the link
-   next to them.  The link relay satellities must have enough memory and
+   next to them.  The link relay satellites must have enough memory and
    logic so that they are able to create these sessions between them.
 
    The motivation behind this satellite relay solution is to split the
@@ -120,16 +120,16 @@ Table of Contents
    the next relay.  At this point, the packet may be removed from the
    link's memory.
 
-   Getting this communication link up and runnig might be slower,
+   Getting this communication link up and running might be slower,
    because it requires individual connections to bet set up for the link
    satellites.  This problem can be overcome, if the links between the
-   satellities always stay up.
+   satellites always stay up.
 
 
 2.2 Satellite Constellation
 
    We propose that the satellite link relays will be placed to the
-   Langrarian points of both Earth and Mars.  In addition, there should
+   Lagrangian points of both Earth and Mars.  In addition, there should
    be some edge relays placed in the orbits of the said planets.  By
    placing the satellite link relays to Lagrangian points, we can make 
    sure that the Sun will never be able to block the communications 
@@ -162,8 +162,8 @@ Table of Contents
    latency in case of packet loss, is a major factor to consider.
 
    Taking these resource factors into account, development should
-   prioritize data intergrity over transfer speed.  However, similar to
-   terrestrial wireless communications, different channel codings should
+   prioritize data integrity over transfer speed.  However, similar to
+   terrestrial wireless communications, different channel codes should
    be developed to provide varying goodput values, as the channel will
    without doubt vary over time, as the interplanetary distance changes,
    along with the strength of solar noise.  As the communication will be
