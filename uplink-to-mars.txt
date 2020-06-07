@@ -128,13 +128,16 @@ Table of Contents
 2.2 Satellite Constellation
 
    We propose that the satellite link relays will be placed to the
-   Langrarian points of both Earth and Mars.  In addition, there should
+   Lagrangian points of both Earth and Mars.  In addition, there should
    be some edge relays placed in the orbits of the said planets.  By
    placing the satellite link relays to Lagrangian points, we can make 
    sure that the Sun will never be able to block the communications 
    between the planets completely.
 
-   Further research to optimize the satellite locations should be made.
+   Others have also concluded way before us that placing the satellities
+   to Langrangian points might be a viable solution to this problem.
+   For instance, Rahman, M., Islam, M. and Huq, R., have concluded in
+   their paper that 
 
 
 
@@ -203,6 +206,14 @@ Table of Contents
          space.com,
          https://www.space.com/16875-how-far-away-is-mars.html
          Read: 11.05.2020
+
+   [3]   Rahman, M., Islam, M. and Huq, R., Deep Space Communication and 
+         Exploration of Solar System through Inter-Lagrangian Data Relay 
+         Satellite Constellation.
+         Department of Mathematics and Physics, North South University, 
+         Dhaka, Bangladesh
+         https://icubesat.files.wordpress.com/2019/05/b.2.2.201905241449-paper.pdf
+         Read: 07.06.2020
 
                               Proposal                          [Page 7]
 
