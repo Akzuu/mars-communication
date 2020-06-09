@@ -26,6 +26,7 @@ Table of Contents
    3. Data Integrity vs. Transfer Speed ...............................5
    4. Summary .........................................................6
    5. Sources .........................................................7
+   6. Feedback review .................................................8
 
 
 
@@ -137,7 +138,9 @@ Table of Contents
    Others have also concluded way before us that placing the satellities
    to Langrangian points might be a viable solution to this problem.
    For instance, Rahman, M., Islam, M. and Huq, R., have concluded in
-   their paper that 
+   their paper that that placing the satellites to the said points is a 
+   great idea.  The paper also discusses in detail about the satellite 
+   constellation and how many satellites are required. [3]
 
 
 
@@ -218,3 +221,46 @@ Table of Contents
                               Proposal                          [Page 7]
 
       Relay system for Earth to Mars Digital Communication      May 2020
+
+6. Feedback review
+
+      From the feedback we received we think the number 2 was most
+      useful. It had clear structure and good points about the subject,
+      though we didn't really alter our work.  The reason for this was
+      that we simply don't really have room for more techical details
+      because of the 10 000 character limit given to this task.  Lack of
+      time was also an issue, because we are both working full time now.
+      The mention about forgetting assigning IP addresses was ignored,
+      because it was not part of the task.
+
+      Feedback number 1 had some feedback about our grammar and those 
+      issues have been fixed now. Number 1 was also little bit confusing
+      so we didn't really dig deep into it ether.
+
+      Feedback number 3 questioned our academic honesty, which of course
+      is not nice a thing to do. Our honesty was questioned, because our
+      proposal had the idea of placing the satellites to Lagrangian 
+      points. In our defence, we must say that the idea is not very
+      unique and can be easily formated in the following thought
+      process. 
+
+      1. If we want to communicate to Mars at all times, even when it is
+      behind the Sun, we must have some kind of link system
+      2. As the links, we can use satellites and build a "router" system
+      3. How can we make sure, that there always is a satellite that can
+      be communicated with from both Earth and Mars?
+      4. Answer: Langrange points
+
+      Now because this truly is not a very unique thing to discover, we
+      should have probably looked into if someone else had already
+      written and published scientific research about placing the 
+      satellites to the Langrange points.  We were in a hurry though,
+      and forgot to do that. But in our opinion, by no means is coming
+      up with the idea of placing the satellites to Langrange points 
+      academic dishonesty. We added a chapter to 2.2 to discuss, that
+      our idea was not unique and that others have came to the same
+      conclusion way before us. It was not our intention to say that we
+      were the only ones that have came up with this idea.
+
+
+                              Proposal                          [Page 8]
